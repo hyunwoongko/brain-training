@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--Base Color-->
+    <color name="black">#000000</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FF7700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="purple">#770077</color>
+    <color name="pink">#FFCCCC</color>
+    <color name="skyblue">#77CEEB</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="magenta">#FF00FF</color>
+
+    <string name="black_Hexa">#000000</string>
+    <string name="white_Hexa">#FFFFFF</string>
+    <string name="red_Hexa">#FF0000</string>
+    <string name="green_Hexa">#00FF00</string>
+    <string name="blue_Hexa">#0000FF</string>
+    <string name="orange_Hexa">#FF7700</string>
+    <string name="yellow_Hexa">#FFFF00</string>
+    <string name="purple_Hexa">#770088</string>
+    <string name="pink_Hexa">#FFCCCC</string>
+    <string name="skyblue_Hexa">#77CEEB</string>
+    <string name="cyan_Hexa">#00FFFF</string>
+    <string name="magenta_Hexa">#FF00FF</string>
+
+    <!--etc-->
+    <color name="control_gray">#959da6</color>
+    <color name="word_gray">#bfbfbf</color>
+    <color name="control_white_transparent">#f2ffffff</color>
+    <color name="toolbar_icon_disabled">#61ffffff</color>
+    <color name="toolbar_icon_enabled">#ffffffff</color>
+    <color name="image_button_disabled">@android:color/darker_gray</color>
+    <color name="image_button_enabled">@color/colorPrimary</color>
+    <color name="dark_green">#226622</color>
+
+
+</resources>

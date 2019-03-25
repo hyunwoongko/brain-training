@@ -1,0 +1,130 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    android:padding="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/main_profile_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+
+
+            <TextView
+                android:id="@+id/main_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/com_kakao_profile_nickname"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:text="@string/com_kakao_profile_userId"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center|bottom">
+
+        <ImageButton
+            android:id="@+id/start_button"
+            android:layout_width="160dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="30dp"
+            android:background="@android:color/transparent"
+            android:onClick="onStartButtonClicked"
+            android:scaleType="fitCenter"
+            android:src="@drawable/startbtn" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:gravity="bottom|left">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onLogoutButtonClicked"
+            android:background="@drawable/logout"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="true"
+        android:gravity="bottom|right">
+
+        <ImageButton
+            android:id="@+id/friends_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:onClick="onFriendButtonClicked"
+            android:scaleType="fitCenter"
+            android:src="@drawable/friend" />
+
+        <ImageButton
+            android:id="@+id/favorite_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:onClick="onFavoriteButtonClicked"
+            android:src="@drawable/favorite" />
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:onClick="onSettingButtonClicked"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/setting" />
+
+        <ImageButton
+            android:id="@+id/daily_training"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:onClick="onDailyTrainingButtonClicked"
+            android:src="@drawable/calendar" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

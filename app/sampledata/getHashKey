@@ -1,0 +1,44 @@
+
+개발자 추가시에 해야할 행동.
+
+1. 아래의 getHashKey 메소드로 해당 개발자의 해시키를 구함.
+
+2. 카카오 개발자에 해시키를 등록.
+https://developers.kakao.com/apps/197355/settings/general?platform=android
+
+3. 개발팀에 등록.
+https://developers.kakao.com/apps/197355/settings/team
+
+
+
+
+
+private void getHashKey() {
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo(this.getPackageName(), PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.d(TAG, "key_hash=" + Base64.encodeToString(md.digest(), Base64.DEFAULT));
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+        byte[] sha1 = {
+                (byte)0xD9,(byte)0x32,(byte)0x55,
+                (byte)0x39,(byte)0x7A,(byte)0xA2,
+                (byte)0xF8,(byte)0xB1,(byte)0xC7,
+                (byte)0xF8,(byte)0xD0,(byte)0x4C,
+                (byte)0x51,(byte)0x3A,(byte)0xA7,
+                (byte)0xFC,(byte)0x68,(byte)0xAF,
+                (byte)0x70,(byte)0xB7
+        };
+        Logger.e("WWWWWWWWWWW: " + Base64.encodeToString(sha1, Base64.NO_WRAP));
+
+        // 구글 해시키 구하기

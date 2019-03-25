@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">말랑말랑 브레인 트레이닝 for Kakao</string>
+    <string name="action_settings">Settings</string>
+    <string name="kakao_app_key">db38ef156c98a7eaae59fed02a2e7fa7</string>
+
+    <string name="logout">Logout</string>
+    <string name="profile_picture">Profile Picture:</string>
+    <string name="display_name">Display Name:</string>
+    <string name="login_failed">Login failed.</string>
+    <string name="email_text">Email:</string>
+
+    <string name="menu_inputMode">Input mode</string>
+    <string name="menu_undo">Undo</string>
+    <string name="menu_redo">Redo</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_convert">Convert</string>
+    <string name="menu_newPackage">New...</string>
+    <string name="menu_openPackage">Open...</string>
+    <string name="menu_savePackage">Save</string>
+    <string name="menu_export">Export</string>
+    <string name="menu_newPart">New part...</string>
+    <string name="menu_previousPart">Previous part</string>
+    <string name="menu_nextPart">Next part</string>
+    <string name="menu_resetView">Reset view</string>
+    <string name="menu_zoomIn">Zoom in</string>
+    <string name="menu_zoomOut">Zoom out</string>
+
+    <string name="newPackage_title">New package - enter file name</string>
+    <string name="openPackage_title">Open package - select file</string>
+    <string name="newPart_title">New part - select type</string>
+    <string name="exportType_title">Export - select type</string>
+    <string name="exportPackage_title">Export - select file</string>
+    <string name="addImage_title">Add image - select file</string>
+    <string name="inputMode_title">Input mode - select behavior</string>
+    <string name="inputMode_forcePen">Pen</string>
+    <string name="inputMode_forceTouch">Touch</string>
+    <string name="inputMode_auto">Auto</string>
+
+    <string name="style_view_string_h1">H1</string>
+    <string name="style_view_string_h2">H2</string>
+    <string name="style_view_string_h3">H3</string>
+    <string name="style_view_string_normal">¶</string>
+    <string name="more_view_string">•••</string>
+
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <string-array name="mode">
+        <item>Newtone Talk 1</item>
+        <item>Newtone Talk 2</item>
+    </string-array>
+
+    <string name="CalculateGame">계산 게임</string>
+    <string name="CountGame">숫자 세기</string>
+    <string name="MomentGame">순간 기억</string>
+    <string name="ColorGame">색깔 말하기</string>
+    <string name="MixGame">색깔 혼합 게임</string>
+    <string name="ShellGame">야바위 게임</string>
+    <string name="WordGame">단어 암기</string>
+    <string name="LabialGame">입술 소리 게임</string>
+
+</resources>
+

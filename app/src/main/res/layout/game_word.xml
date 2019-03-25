@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+
+    <TextView
+        android:id="@+id/ready"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="준비"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#EEEEEE"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/word"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="아래 단어들을 외워주세요 !"
+                android:layout_gravity="top"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/readygame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Ready"
+                android:textSize="25sp" />
+
+            <GridLayout
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="#EEEEEE"
+                android:layout_weight="1"
+                android:columnCount="4"
+                android:orientation="horizontal"
+                android:rowCount="5"></GridLayout>
+
+            <TextView
+                android:id="@+id/mTextField"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="#EEEEEE"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/timerset"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#e0e0e0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/SubmitNum"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#EECC00"
+                android:gravity="center"
+                android:text="제출 기회 : 20"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/RightAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:background="#EECC00"
+                android:text="맞은 문제 : 0 / 20"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <com.myscript.atk.scw.SingleCharWidget
+                    android:id="@+id/widget"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                </com.myscript.atk.scw.SingleCharWidget>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:weightSum="2">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onSubmittedButtonClicked"
+                        android:textColor="@color/colorPrimary"
+                        android:text="제 출" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:onClick="onDeleteButtonClicked"
+                        android:textColor="@color/colorPrimary"
+                        android:text="삭 제" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+
+/*   public void getUserAllValue(final UserAllCallback please_make_new_callback) {
+
+        FirebaseDatabase.getInstance().getReference().child("AllUserDB")
+                .addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        if (uList != null) {
+                            uList.clear();
+                        }//uList를 Clear
+                        if (UserAllDB.getInstance().getAllUserList() != null) {
+                            UserAllDB.getInstance().clearAllUserList();
+                        }//UserAllDB의 리스트를 Clear
+                        for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                            please_make_new_callback.onUserAllCallback(snapshot.getKey());
+                        } // 포이치문. 칠드런들의 스냅샷 = snapshot
+                        //snapshot의 key를 콜백으로 넘김.
+                        //포문 한번 돌때마다 콜백 한번씩 실행.
+                    }
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });// 전체 유저목록.
+    }// @DataConnection
+    //    Helper메소드 -> 콜백메소드 -> 모델의 String에 저장
+    // -> Helper내부의 리스트에 모델의 String을 차례로 담음
+    // -> Helper내부의 리스트를 모델의 리스트에 저장.
+
+    public void LoadUserAllData() {
+        FirebaseHelper.getInstance().getUserAllValue(new UserAllCallback() {
+            @Override
+            public void onUserAllCallback(String value) {
+                uList = new ArrayList<String>();
+                uList.add(String.valueOf(value));
+                UserAllDB.getInstance().setAllUserList(uList);
+            }
+        });
+    }
+
+
+    public class UserAllDB {
+    //모델 첨부
+        private volatile static UserAllDB mInstance = null;
+        public static UserAllDB getInstance() {
+            if (mInstance == null) {
+                synchronized (UserAllDB.class) {
+                    if (mInstance == null) {
+                        mInstance = new UserAllDB();
+                    }
+                }
+            }
+            return mInstance;
+        } // Singleton
+
+        public static void setInstance(UserAllDB mInstance) {
+            UserAllDB.mInstance = mInstance;
+        }
+        private String AllUserDB;
+        private List<String> AllUserList;
+        public String getAllUserDB() {
+            return AllUserDB;
+        }
+        public List<String> getAllUserList() {
+            return AllUserList;
+        }
+        public void setAllUserDB(String allUserDB) {
+            AllUserDB = allUserDB;
+        }
+        public void setAllUserList(List<String> allUserList) {
+            AllUserList = allUserList;
+        }
+        public void clearAllUserList() {
+            AllUserList.clear();
+        }
+    }*/
+
+// 포이치문을 사용하여 해당 노드의 자식노드들의 킷값을 전부 받아오는 방법.
+// 더 좋은 방법이 생겨서 사용하진 않지만 만약 노드의 킷값이 필요지면 변형해서 사용하기.
